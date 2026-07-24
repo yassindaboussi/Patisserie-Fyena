@@ -115,5 +115,14 @@
     "category": "produits",
     "badge": "Produit",
     "image": "Images/produits/boulette-noix-amandes.jpg"
+  },
+  {
+    "id": "boulette-noix-amandes",
+    "name": "Boulette aux Noix et Amandes (Twejen Jawza)",
+    "description": "Boulette aux noix et amandes, une création raffinée de la pâtisserie fine tunisienne, souvent appelée Twejen Jawza ou Perle aux Noix.",
+    "price": 50,
+    "category": "produits",
+    "badge": "Produit",
+    "image": "Images/produits/image6.png"
   }
 ]
