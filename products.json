@@ -1,0 +1,119 @@
+[
+  {
+    "id": "coffret-prestige-or",
+    "name": "Coffret Prestige Or",
+    "description": "Sélection signature de douceurs tunisiennes, écrin doré et ruban bordeaux.",
+    "price": 65,
+    "category": "coffret",
+    "badge": "Coffret",
+    "image": "Images/coffret/coffret-prestige-or.jpg"
+  },
+  {
+    "id": "coffret-royal-amande",
+    "name": "Coffret Royal Amande",
+    "description": "Baklawa, samsa et makroudh à l'amande, présentés en coffret bois gravé.",
+    "price": 58,
+    "category": "coffret",
+    "badge": "Coffret",
+    "image": "Images/coffret/coffret-royal-amande.jpg"
+  },
+  {
+    "id": "coffret-signature-fyena",
+    "name": "Coffret Signature Fyena",
+    "description": "Notre assortiment le plus raffiné, pensé pour les grandes occasions.",
+    "price": 75,
+    "category": "coffret",
+    "badge": "Coffret",
+    "image": "Images/coffret/coffret-signature-fyena.jpg"
+  },
+  {
+    "id": "coffret-naissance-douceur",
+    "name": "Coffret Naissance Douceur",
+    "description": "Pour célébrer une naissance, douceurs miniatures en forme de petits vêtements de bébé.",
+    "price": 45,
+    "category": "coffret-bebe",
+    "badge": "Bébé",
+    "image": "Images/coffret-bebe/coffret-naissance-douceur.jpg"
+  },
+  {
+    "id": "coffret-sebou3-rose",
+    "name": "Coffret Sebou3 Rose",
+    "description": "Pièce montée sucrée pour la tradition du Sebou3, personnalisable.",
+    "price": 55,
+    "category": "coffret-bebe",
+    "badge": "Bébé",
+    "image": "Images/coffret-bebe/coffret-sebou3-rose.jpg"
+  },
+  {
+    "id": "coffret-petit-prince",
+    "name": "Coffret Petit Prince",
+    "description": "Assortiment doré pour célébrer l'arrivée d'un petit garçon.",
+    "price": 48,
+    "category": "coffret-bebe",
+    "badge": "Bébé",
+    "image": "Images/coffret-bebe/coffret-petit-prince.jpg"
+  },
+  {
+    "id": "coffret-reussite-pfe",
+    "name": "Coffret Réussite PFE",
+    "description": "Le cadeau parfait pour féliciter un jeune diplômé après sa soutenance, avec toque dorée.",
+    "price": 62,
+    "category": "coffret-pfe",
+    "badge": "PFE",
+    "image": "Images/coffret-pfe/coffret-reussite-pfe.jpg"
+  },
+  {
+    "id": "coffret-felicitations-diplome",
+    "name": "Coffret Félicitations Diplôme",
+    "description": "Assortiment fin décoré de roses séchées et pistaches, pour féliciter avec élégance.",
+    "price": 58,
+    "category": "coffret-pfe",
+    "badge": "PFE",
+    "image": "Images/coffret-pfe/coffret-felicitations-diplome.jpg"
+  },
+  {
+    "id": "coffret-success-story",
+    "name": "Coffret Success Story",
+    "description": "Format généreux à partager avec le jury et les proches le jour J.",
+    "price": 70,
+    "category": "coffret-pfe",
+    "badge": "PFE",
+    "image": "Images/coffret-pfe/coffret-success-story.jpg"
+  },
+  {
+    "id": "brigadeiros",
+    "name": "Brigadeiros",
+    "description": "Truffe fondante façon brigadeiro brésilien, roulée à la main et entièrement enrobée de vermicelles chocolatés croquants.",
+    "price": 30,
+    "category": "produits",
+    "badge": "Produit",
+    "image": "Images/produits/brigadeiros.jpg"
+  },
+  {
+    "id": "machmoum",
+    "name": "Machmoum",
+    "description": "Petit-four raffiné de la pâtisserie fine tunisienne, pâte d'amande et de pistache façonnée en bouquet et parsemée d'éclats de pistache.",
+    "price": 42,
+    "category": "produits",
+    "badge": "Produit",
+    "image": "Images/produits/machmoum.jpg"
+  },
+  {
+    "id": "beijinho-coco",
+    "name": "Beijinho de Coco (façon Raffaello)",
+    "description": "Truffes façon Raffaello ou à des brigadeiros blancs brésiliens (Beijinho de coco), entièrement enrobées de sucre scintillant en micro-billes.",
+    "price": 28,
+    "category": "produits",
+    "badge": "Produit",
+    "image": "Images/produits/beijinho-coco.jpg"
+  },
+  {
+    "id": "boulette-noix-amandes",
+    "name": "Boulette aux Noix et Amandes (Twejen Jawza)",
+    "description": "Boulette aux noix et amandes, une création raffinée de la pâtisserie fine tunisienne, souvent appelée Twejen Jawza ou Perle aux Noix.",
+    "price": 26,
+    "category": "produits",
+    "badge": "Produit",
+    "image": "Images/produits/boulette-noix-amandes.jpg"
+  }
+]
