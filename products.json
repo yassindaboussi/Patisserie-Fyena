@@ -130,8 +130,8 @@
     "name": "Barquette Datte Mixte moy (20piéces)",
     "description": "barquette Datte Mixte moy, une création raffinée de la pâtisserie fine tunisienne.",
     "price": 30,
-    "category": "produits",
-    "badge": "Produit",
+    "category": "coffret",
+    "badge": "coffret",
     "image": "Images/image1.png"
   },
     {
@@ -139,8 +139,8 @@
     "name": "Coffret Automnal de Chocolats aux Noix (20piéces)",
     "description": "Un élégant coffret de chocolats artisanaux aux noix, soigneusement confectionnés pour offrir une expérience gourmande alliant finesse, authenticité et saveurs raffinées.",
     "price": 30,
-    "category": "produits",
-    "badge": "Produit",
+    "category": "coffret",
+    "badge": "coffret",
     "image": "Images/coffret/image4.png"
   }
 ]
