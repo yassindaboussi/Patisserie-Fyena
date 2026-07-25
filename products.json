@@ -134,7 +134,7 @@
     "badge": "coffret",
     "image": "Images/image1.png"
   },
-    {
+  {
     "id": "Coffret Automnal de Chocolats aux Noix",
     "name": "Coffret Automnal de Chocolats aux Noix (20piéces)",
     "description": "Un élégant coffret de chocolats artisanaux aux noix, soigneusement confectionnés pour offrir une expérience gourmande alliant finesse, authenticité et saveurs raffinées.",
@@ -142,5 +142,14 @@
     "category": "coffret",
     "badge": "coffret",
     "image": "Images/coffret/image4.png"
+  },
+  {
+    "id": "Kaak Warka",
+    "name": "Kaak Warka(16 piéces)",
+    "description": "Kaak Warka tunisien, une douceur traditionnelle au cœur fondant d'amandes.",
+    "price": 20,
+    "category": "coffret",
+    "badge": "coffret",
+    "image": "Images/image3.png"
   }
 ]
