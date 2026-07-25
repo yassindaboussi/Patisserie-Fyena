@@ -124,5 +124,14 @@
     "category": "produits",
     "badge": "Produit",
     "image": "Images/produits/image6.png"
+  },
+  {
+    "id": "barquette-Datte-Mixte-moy",
+    "name": "barquette Datte Mixte moy (20piéces)",
+    "description": "barquette Datte Mixte moy, une création raffinée de la pâtisserie fine tunisienne.",
+    "price": 30,
+    "category": "produits",
+    "badge": "Produit",
+    "image": "Images/image1.png"
   }
 ]
