@@ -1,4 +1,49 @@
 [
+    {
+    "id": "boule praline pistache",
+    "name": "Boule praline pistache",
+    "description": "Une douceur artisanale au praliné et à la pistache, riche en saveurs.",
+    "price": 18.5,
+    "category": "produits",
+    "badge": "produits",
+    "image": "Images/image9.png"
+  },
+  {
+    "id": "boule praline noisette",
+    "name": "Boule praline noisette",
+    "description": "Une bouchée gourmande au praliné et à la noisette, riche en saveurs.",
+    "price": 18.5,
+    "category": "produits",
+    "badge": "produits",
+    "image": "Images/image10.png"
+  },
+  {
+    "id": "boule de carthage",
+    "name": "Boule de carthage",
+    "description": "Une douceur tunisienne raffinée aux saveurs authentiques.",
+    "price": 9,
+    "category": "produits",
+    "badge": "produits",
+    "image": "Images/image11.png"
+  },
+    {
+    "id": "Baklawa noisette",
+    "name": "Baklawa noisette",
+    "description": "une douceur tunisienne croustillante garnie de noisettes savoureuses pour un plaisir gourmand unique.",
+    "price": 40,
+    "category": "produits",
+    "badge": "produits",
+    "image": "Images/image13.png"
+  },
+  {
+    "id": "Boule Chocolat Noisette",
+    "name": "Boule Chocolat Noisette",
+    "description": "Une délicieuse boule au chocolat et à la noisette, intensément gourmande.",
+    "price": 10.5,
+    "category": "produits",
+    "badge": "produits",
+    "image": "Images/image12.png"
+  },
   {
     "id": "coffret-prestige-or",
     "name": "Coffret Prestige Or",
@@ -169,50 +214,6 @@
     "category": "produits",
     "badge": "produits",
     "image": "Images/image8.png"
-  },
-  {
-    "id": "boule praline pistache",
-    "name": "Boule praline pistache",
-    "description": "Une douceur artisanale au praliné et à la pistache, riche en saveurs.",
-    "price": 18.5,
-    "category": "produits",
-    "badge": "produits",
-    "image": "Images/image9.png"
-  },
-  {
-    "id": "boule praline noisette",
-    "name": "Boule praline noisette",
-    "description": "Une bouchée gourmande au praliné et à la noisette, riche en saveurs.",
-    "price": 18.5,
-    "category": "produits",
-    "badge": "produits",
-    "image": "Images/image10.png"
-  },
-  {
-    "id": "boule de carthage",
-    "name": "Boule de carthage",
-    "description": "Une douceur tunisienne raffinée aux saveurs authentiques.",
-    "price": 9,
-    "category": "produits",
-    "badge": "produits",
-    "image": "Images/image11.png"
-  },
-  {
-    "id": "Boule Chocolat Noisette",
-    "name": "Boule Chocolat Noisette",
-    "description": "Une délicieuse boule au chocolat et à la noisette, intensément gourmande.",
-    "price": 10.5,
-    "category": "produits",
-    "badge": "produits",
-    "image": "Images/image12.png"
-  },
-  {
-    "id": "Baklawa noisette",
-    "name": "Baklawa noisette",
-    "description": "une douceur tunisienne croustillante garnie de noisettes savoureuses pour un plaisir gourmand unique.",
-    "price": 40,
-    "category": "produits",
-    "badge": "produits",
-    "image": "Images/image13.png"
   }
+
 ]
