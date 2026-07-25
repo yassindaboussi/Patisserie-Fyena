@@ -1,5 +1,14 @@
 [
-    {
+   {
+    "id": "Fosdka pistache",
+    "name": "Fosdka pistache",
+    "description": "une spécialité tunisienne raffinée a base de pistache .",
+    "price": 130,
+    "category": "produits",
+    "badge": "Produit",
+    "image": "Images/image14.png"
+  },
+  {
     "id": "barquette-Datte-Mixte-moy",
     "name": "Barquette Datte Mixte moy (20piéces)",
     "description": "barquette Datte Mixte moy, une création raffinée de la pâtisserie fine tunisienne.",
@@ -215,5 +224,4 @@
     "badge": "Produit",
     "image": "Images/produits/image6.png"
   }
-
 ]
