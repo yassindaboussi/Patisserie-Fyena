@@ -1,5 +1,50 @@
 [
     {
+    "id": "barquette-Datte-Mixte-moy",
+    "name": "Barquette Datte Mixte moy (20piéces)",
+    "description": "barquette Datte Mixte moy, une création raffinée de la pâtisserie fine tunisienne.",
+    "price": 30,
+    "category": "coffret",
+    "badge": "coffret",
+    "image": "Images/image1.png"
+  },
+  {
+    "id": "Coffret Automnal de Chocolats aux Noix",
+    "name": "Coffret Automnal de Chocolats aux Noix (20piéces)",
+    "description": "Un élégant coffret de chocolats artisanaux aux noix, soigneusement confectionnés pour offrir une expérience gourmande alliant finesse, authenticité et saveurs raffinées.",
+    "price": 30,
+    "category": "coffret",
+    "badge": "coffret",
+    "image": "Images/coffret/image4.png"
+  },
+  {
+    "id": "Kaak Warka",
+    "name": "Kaak Warka(16 piéces)",
+    "description": "Kaak Warka tunisien, une douceur traditionnelle au cœur fondant d'amandes.",
+    "price": 20,
+    "category": "coffret",
+    "badge": "coffret",
+    "image": "Images/image3.png"
+  },
+  {
+    "id": "la Bjaouia tunisienne à la pistache et aux amandes",
+    "name": "la Bjaouia tunisienne à la pistache et aux amandes",
+    "description": " Une pâtisserie tunisienne raffinée aux pistaches et aux amandes, riche en saveurs.",
+    "price": 20,
+    "category": "produits",
+    "badge": "produits",
+    "image": "Images/image7.png"
+  },
+  {
+    "id": "boule pignon amande",
+    "name": "Boule pignon amande",
+    "description": "Une gourmandise artisanale aux pignons et aux amandes, riche en saveurs.",
+    "price": 18.5,
+    "category": "produits",
+    "badge": "produits",
+    "image": "Images/image8.png"
+  },
+  {
     "id": "boule praline pistache",
     "name": "Boule praline pistache",
     "description": "Une douceur artisanale au praliné et à la pistache, riche en saveurs.",
@@ -169,51 +214,6 @@
     "category": "produits",
     "badge": "Produit",
     "image": "Images/produits/image6.png"
-  },
-  {
-    "id": "barquette-Datte-Mixte-moy",
-    "name": "Barquette Datte Mixte moy (20piéces)",
-    "description": "barquette Datte Mixte moy, une création raffinée de la pâtisserie fine tunisienne.",
-    "price": 30,
-    "category": "coffret",
-    "badge": "coffret",
-    "image": "Images/image1.png"
-  },
-  {
-    "id": "Coffret Automnal de Chocolats aux Noix",
-    "name": "Coffret Automnal de Chocolats aux Noix (20piéces)",
-    "description": "Un élégant coffret de chocolats artisanaux aux noix, soigneusement confectionnés pour offrir une expérience gourmande alliant finesse, authenticité et saveurs raffinées.",
-    "price": 30,
-    "category": "coffret",
-    "badge": "coffret",
-    "image": "Images/coffret/image4.png"
-  },
-  {
-    "id": "Kaak Warka",
-    "name": "Kaak Warka(16 piéces)",
-    "description": "Kaak Warka tunisien, une douceur traditionnelle au cœur fondant d'amandes.",
-    "price": 20,
-    "category": "coffret",
-    "badge": "coffret",
-    "image": "Images/image3.png"
-  },
-  {
-    "id": "la Bjaouia tunisienne à la pistache et aux amandes",
-    "name": "la Bjaouia tunisienne à la pistache et aux amandes",
-    "description": " Une pâtisserie tunisienne raffinée aux pistaches et aux amandes, riche en saveurs.",
-    "price": 20,
-    "category": "produits",
-    "badge": "produits",
-    "image": "Images/image7.png"
-  },
-  {
-    "id": "boule pignon amande",
-    "name": "Boule pignon amande",
-    "description": "Une gourmandise artisanale aux pignons et aux amandes, riche en saveurs.",
-    "price": 18.5,
-    "category": "produits",
-    "badge": "produits",
-    "image": "Images/image8.png"
   }
 
 ]
