@@ -160,5 +160,14 @@
     "category": "produits",
     "badge": "produits",
     "image": "Images/image7.png"
+  },
+    {
+    "id": "boule pignon amande",
+    "name": "boule pignon amande",
+    "description": "Une gourmandise artisanale aux pignons et aux amandes, riche en saveurs.",
+    "price": 18.5,
+    "category": "produits",
+    "badge": "produits",
+    "image": "Images/image8.png"
   }
 ]
