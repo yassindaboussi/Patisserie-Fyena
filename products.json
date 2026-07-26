@@ -126,7 +126,7 @@
     "image": "Images/coffret/coffret-signature-fyena.jpg"
   },
   {
-    "id": "coffret-Bébé-douceur",
+    "id": "coffret-bebe-douceur-princesse",
     "name": "Coffret bébé Douceur -Petite princesse",
     "description": "Pour célébrer une naissance, douceurs miniatures en forme de petite princesse.",
     "price": 50,
@@ -135,7 +135,7 @@
     "image": "Images/coffret-bebe/image15.png"
   },
   {
-    "id": "coffret-naissance-douceur",
+    "id": "coffret-le-petit-prince",
     "name": "Le Petit Prince",
     "description": "Pour célébrer une naissance, douceurs miniatures en forme de petits vêtements de bébé.",
     "price": 50,
@@ -234,7 +234,7 @@
     "image": "Images/produits/boulette-noix-amandes.jpg"
   },
   {
-    "id": "boulette-noix-amandes",
+    "id": "boulette-noix-amandes-grand-format",
     "name": "Boulette aux Noix et Amandes (Twejen Jawza)",
     "description": "Boulette aux noix et amandes, une création raffinée de la pâtisserie fine tunisienne, souvent appelée Twejen Jawza ou Perle aux Noix.",
     "price": 50,

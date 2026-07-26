@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fyena – Fiche produit</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <!-- Feuilles de style -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="product.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html"><img src="Images/logo_trans.png" alt="Fyena" class="logo-img" /></a>
+      </div>
+      <div class="nav-right">
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html#accueil">Accueil</a></li>
+            <li><a href="index.html#produits">Nos douceurs</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+        <div class="nav-cart-icon" id="navCartIcon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="nav-cart-count" id="navCartCount">0</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== FIL D'ARIANE ===== -->
+    <div class="container">
+      <nav class="breadcrumb" id="breadcrumb" aria-label="Fil d'Ariane">
+        <a href="index.html">Accueil</a>
+        <span class="crumb-sep">/</span>
+        <a href="index.html#produits">Nos douceurs</a>
+      </nav>
+    </div>
+
+    <!-- ===== FICHE PRODUIT (généré par product.js) ===== -->
+    <section class="product-detail" id="productDetail">
+      <div class="detail-loading"><i class="fas fa-spinner fa-spin"></i> Chargement de la douceur…</div>
+    </section>
+
+    <!-- ===== PRODUITS SIMILAIRES ===== -->
+    <section class="related-section" id="relatedSection">
+      <div class="container">
+        <h2 class="section-title">Vous aimerez <span class="highlight">aussi</span></h2>
+        <div class="related-grid" id="relatedGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="container footer-container">
+      <p>&copy; 2024 Fyena – Tous droits réservés.</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/fyena878/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== PANIER FLOTTANT ===== -->
+  <button class="cart-float" id="cartFloat">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count" id="floatCartCount">0</span>
+  </button>
+
+  <!-- ===== SIDEBAR PANIER ===== -->
+  <div class="cart-overlay" id="cartOverlay">
+    <div class="cart-sidebar">
+      <div class="cart-header">
+        <h3>🛒 Mon Panier</h3>
+        <button id="closeCartBtn"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="cart-items" id="cartItemsContainer">
+        <p class="empty-msg">Votre panier est vide.</p>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total</span>
+          <span id="cartTotalPrice">0 DT</span>
+        </div>
+        <div class="cart-actions">
+          <a href="#" id="whatsappOrderBtn" class="btn-primary btn-whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i> Commander sur WhatsApp
+          </a>
+          <a href="tel:+21621600684" class="btn-outline btn-call">
+            <i class="fas fa-phone"></i>+216 21 600 684
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast">Ajouté au panier !</div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="product.js"></script>
+
+</body>
+</html>

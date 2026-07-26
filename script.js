@@ -5,6 +5,24 @@
 let allProducts = [];
 let cartItems = [];
 
+// ===== PERSISTANCE DU PANIER (partagée entre les pages) =====
+const CART_STORAGE_KEY = 'fyena_cart';
+
+function saveCart() {
+  try {
+    localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cartItems));
+  } catch (e) { /* stockage indisponible : on continue sans persistance */ }
+}
+
+function loadCart() {
+  try {
+    const stored = localStorage.getItem(CART_STORAGE_KEY);
+    cartItems = stored ? JSON.parse(stored) : [];
+  } catch (e) {
+    cartItems = [];
+  }
+}
+
 // ===== ÉLÉMENTS DOM =====
 const productGrid = document.getElementById('productGrid');
 const toast = document.getElementById('toast');
@@ -27,9 +45,10 @@ async function loadProducts() {
     const response = await fetch('products.json');
     if (!response.ok) throw new Error('Impossible de charger products.json');
     allProducts = await response.json();
-    renderProducts(allProducts);
+    if (productGrid) renderProducts(allProducts);
   } catch (error) {
     console.error('Erreur de chargement des produits :', error);
+    if (!productGrid) return;
     const isFileProtocol = window.location.protocol === 'file:';
     productGrid.innerHTML = `
       <div style="text-align:center; padding: 40px; max-width: 600px; margin: 0 auto;">
@@ -45,12 +64,14 @@ async function loadProducts() {
 function renderProducts(products) {
   productGrid.innerHTML = products.map(p => `
     <div class="product-card" data-category="${p.category}">
-      <div class="product-image">
-        <img src="${p.image}" alt="${p.name}" />
-        <span class="product-badge">${p.badge}</span>
-      </div>
+      <a class="product-link" href="product.html?id=${encodeURIComponent(p.id)}" aria-label="Voir ${p.name}">
+        <div class="product-image">
+          <img src="${p.image}" alt="${p.name}" />
+          <span class="product-badge">${p.badge}</span>
+        </div>
+      </a>
       <div class="product-info">
-        <h3 title="${p.name}">${p.name}</h3>
+        <h3 title="${p.name}"><a class="product-title-link" href="product.html?id=${encodeURIComponent(p.id)}">${p.name}</a></h3>
         <p title="${p.description}">${p.description}</p>
         <div class="product-footer">
           <span class="product-price">${p.price} DT</span>
@@ -127,13 +148,14 @@ cartOverlay.addEventListener('click', function (e) {
   if (e.target === this) closeCart();
 });
 
-function addToCart(name, price, image) {
+function addToCart(name, price, image, qty = 1) {
   const existing = cartItems.find(item => item.name === name);
   if (existing) {
-    existing.quantity += 1;
+    existing.quantity += qty;
   } else {
-    cartItems.push({ name, price: parseFloat(price), quantity: 1, image });
+    cartItems.push({ name, price: parseFloat(price), quantity: qty, image });
   }
+  saveCart();
   updateCartUI();
   toast.textContent = `✅ ${name} ajouté au panier !`;
   toast.classList.add('show');
@@ -147,6 +169,7 @@ function updateQuantity(name, delta) {
   if (item.quantity <= 0) {
     cartItems = cartItems.filter(i => i.name !== name);
   }
+  saveCart();
   updateCartUI();
   renderCart();
 }
@@ -213,6 +236,7 @@ function updateWhatsAppLink(total) {
 function attachOrderButtons() {
   document.querySelectorAll('.btn-order').forEach(btn => {
     btn.addEventListener('click', function (e) {
+      e.preventDefault();
       e.stopPropagation();
       const name = this.dataset.name;
       const price = this.dataset.price;
@@ -263,6 +287,7 @@ function animateProductCards() {
 // =====================================================
 // INITIALISATION
 // =====================================================
+loadCart();
 updateCartUI();
 renderCart();
 loadProducts();
