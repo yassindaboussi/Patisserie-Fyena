@@ -126,6 +126,24 @@
     "image": "Images/coffret/coffret-signature-fyena.jpg"
   },
   {
+    "id": "coffret-Bébé-douceur",
+    "name": "Coffret bébé Douceur -Petite princesse",
+    "description": "Pour célébrer une naissance, douceurs miniatures en forme de petite princesse.",
+    "price": 50,
+    "category": "coffret-bebe",
+    "badge": "Bébé",
+    "image": "Images/coffret-bebe/image15.png"
+  },
+  {
+    "id": "coffret-naissance-douceur",
+    "name": "Le Petit Prince",
+    "description": "Pour célébrer une naissance, douceurs miniatures en forme de petits vêtements de bébé.",
+    "price": 50,
+    "category": "coffret-bebe",
+    "badge": "Bébé",
+    "image": "Images/coffret-bebe/image16.png"
+  },
+  {
     "id": "coffret-naissance-douceur",
     "name": "Coffret Naissance Douceur",
     "description": "Pour célébrer une naissance, douceurs miniatures en forme de petits vêtements de bébé.",
