@@ -109,12 +109,12 @@
       font-weight: 800;
       color: #3D405B;
     }
-    .logo i {
-      color: #D98A5B;
-      font-size: 2rem;
-    }
-    .logo span {
-      color: #D98A5B;
+    .logo-img {
+      height: 55px;
+      width: auto;
+      max-width: 220px;
+      object-fit: contain;
+      display: block;
     }
     .nav-right {
       display: flex;
@@ -706,6 +706,10 @@
       }
     }
     @media (max-width: 480px) {
+      .logo-img {
+        height: 42px;
+        max-width: 160px;
+      }
       .product-grid {
         grid-template-columns: 1fr;
       }

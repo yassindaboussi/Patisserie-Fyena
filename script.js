@@ -204,7 +204,7 @@ function updateWhatsAppLink(total) {
     const itemList = cartItems.map(i => `${i.name} (x${i.quantity})`).join(', ');
     message = `Bonjour, je souhaite commander : ${itemList}. Total : ${total.toFixed(2)} DT.`;
   }
-  const url = `https://wa.me/21671234567?text=${encodeURIComponent(message)}`;
+  const url = `https://wa.me/21621600684?text=${encodeURIComponent(message)}`;
   whatsappBtn.href = url;
   whatsappBtn.style.opacity = '1';
   whatsappBtn.style.pointerEvents = 'auto';
