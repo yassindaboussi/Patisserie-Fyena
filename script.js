@@ -50,8 +50,8 @@ function renderProducts(products) {
         <span class="product-badge">${p.badge}</span>
       </div>
       <div class="product-info">
-        <h3>${p.name}</h3>
-        <p>${p.description}</p>
+        <h3 title="${p.name}">${p.name}</h3>
+        <p title="${p.description}">${p.description}</p>
         <div class="product-footer">
           <span class="product-price">${p.price} DT</span>
           <button class="btn-order" data-name="${p.name}" data-price="${p.price}" data-image="${p.image}">
