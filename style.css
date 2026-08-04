@@ -273,8 +273,8 @@
 
     .product-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 32px;
     }
 
     .product-card {
@@ -341,65 +341,77 @@
       text-decoration: underline;
     }
     .product-info {
-      padding: 20px 20px 24px;
+      padding: 20px 20px 20px;
       display: flex;
       flex-direction: column;
       flex: 1;
     }
     .product-info h3 {
-      font-size: 1.2rem;
+      font-size: 1.15rem;
       font-weight: 700;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       overflow: hidden;
-      line-height: 1.3;
-      min-height: calc(1.3em * 2);
+      line-height: 1.35;
+      min-height: calc(1.35em * 2);
     }
     .product-info p {
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       color: #6F5E6B;
-      margin-bottom: 14px;
+      margin-bottom: 16px;
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       overflow: hidden;
-      line-height: 1.4;
-      min-height: calc(1.4em * 2);
+      line-height: 1.45;
+      min-height: calc(1.45em * 2);
     }
     .product-footer {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 12px;
       margin-top: auto;
-      padding-top: 6px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(217, 138, 91, 0.12);
     }
     .product-price {
       font-weight: 700;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       color: #D98A5B;
-      flex-shrink: 0;
+      line-height: 1.2;
+    }
+    .product-price .price-unit {
+      font-weight: 500;
+      font-size: 0.78rem;
+      color: #9a8f95;
+      margin-left: 2px;
     }
     .btn-order {
       background: #2A9D8F;
       color: #fff;
       border: none;
-      padding: 8px 20px;
+      padding: 12px 20px;
       border-radius: 50px;
       font-weight: 700;
-      font-size: 0.9rem;
+      font-size: 0.92rem;
       cursor: pointer;
       transition: all 0.25s;
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 8px;
-      flex-shrink: 0;
-      white-space: nowrap;
+      width: 100%;
     }
     .btn-order:hover {
       background: #21867A;
-      transform: scale(1.04);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(42, 157, 143, 0.3);
+    }
+    .btn-order:active {
+      transform: translateY(0);
     }
 
     /* ===== PANIER FLOTTANT - VERSION COMPACTE ===== */

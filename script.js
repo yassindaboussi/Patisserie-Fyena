@@ -74,8 +74,8 @@ function renderProducts(products) {
         <h3 title="${p.name}"><a class="product-title-link" href="product.html?id=${encodeURIComponent(p.id)}">${p.name}</a></h3>
         <p title="${p.description}">${p.description}</p>
         <div class="product-footer">
-          <span class="product-price">${p.price} DT</span>
-          <button class="btn-order" data-name="${p.name}" data-price="${p.price}" data-image="${p.image}">
+          <span class="product-price">${p.price} DT${p.unit ? ` <span class="price-unit">/ ${p.unit}</span>` : ''}</span>
+          <button class="btn-order" data-name="${p.name}" data-price="${p.price}" data-image="${p.image}" data-unit="${p.unit || 'pièce'}">
             <i class="fas fa-shopping-bag"></i> Commander
           </button>
         </div>
@@ -148,12 +148,12 @@ cartOverlay.addEventListener('click', function (e) {
   if (e.target === this) closeCart();
 });
 
-function addToCart(name, price, image, qty = 1) {
+function addToCart(name, price, image, qty = 1, unit = 'pièce') {
   const existing = cartItems.find(item => item.name === name);
   if (existing) {
     existing.quantity += qty;
   } else {
-    cartItems.push({ name, price: parseFloat(price), quantity: qty, image });
+    cartItems.push({ name, price: parseFloat(price), quantity: qty, image, unit });
   }
   saveCart();
   updateCartUI();
@@ -199,7 +199,7 @@ function renderCart() {
         <img class="cart-item-img" src="${item.image}" alt="${item.name}" />
         <div class="cart-item-info">
           <h4>${item.name}</h4>
-          <span>${item.price} DT / pièce</span>
+          <span>${item.price} DT / ${item.unit || 'pièce'}</span>
         </div>
         <div class="cart-item-actions">
           <div class="cart-item-qty">
@@ -241,7 +241,8 @@ function attachOrderButtons() {
       const name = this.dataset.name;
       const price = this.dataset.price;
       const image = this.dataset.image;
-      addToCart(name, price, image);
+      const unit = this.dataset.unit;
+      addToCart(name, price, image, 1, unit);
     });
   });
 }

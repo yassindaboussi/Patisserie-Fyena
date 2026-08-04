@@ -159,7 +159,7 @@ function renderBreadcrumb(product) {
 
 function renderProductDetail(detailSection, product) {
   const categoryLabel = CATEGORY_LABELS[product.category] || 'Fyena';
-  const unit = CATEGORY_UNIT[product.category] || 'la pièce';
+  const unit = product.unit || CATEGORY_UNIT[product.category] || 'la pièce';
   const chips = CATEGORY_CHIPS[product.category] || CATEGORY_CHIPS['produits'];
   const accordion = CATEGORY_ACCORDION[product.category] || CATEGORY_ACCORDION['produits'];
   const uid = (product.id || 'p').replace(/[^a-zA-Z0-9-]/g, '');
@@ -225,7 +225,7 @@ function renderProductDetail(detailSection, product) {
     </div>
 
     <div class="mobile-order-bar" id="mobileOrderBar">
-      <span class="mob-price">${product.price} DT</span>
+      <span class="mob-price">${product.price} DT <span class="price-unit">/ ${escapeHtml(unit)}</span></span>
       <button type="button" id="mobileAddBtn"><i class="fas fa-shopping-bag"></i> Ajouter</button>
     </div>
   `;
@@ -256,7 +256,8 @@ function wireDetailInteractions(product) {
   });
 
   function addCurrentToCart() {
-    addToCart(product.name, product.price, product.image, currentQty);
+    const unit = product.unit || CATEGORY_UNIT[product.category] || 'pièce';
+    addToCart(product.name, product.price, product.image, currentQty, unit);
   }
   btnAdd.addEventListener('click', addCurrentToCart);
   mobileAddBtn.addEventListener('click', addCurrentToCart);
@@ -305,8 +306,8 @@ function renderRelated(allProductsList, currentProduct) {
         <h3 title="${escapeHtml(p.name)}"><a class="product-title-link" href="product.html?id=${encodeURIComponent(p.id)}">${escapeHtml(p.name)}</a></h3>
         <p title="${escapeHtml(p.description)}">${escapeHtml(p.description)}</p>
         <div class="product-footer">
-          <span class="product-price">${p.price} DT</span>
-          <button class="btn-order" data-name="${escapeHtml(p.name)}" data-price="${p.price}" data-image="${escapeHtml(p.image)}">
+          <span class="product-price">${p.price} DT${p.unit ? ` <span class="price-unit">/ ${escapeHtml(p.unit)}</span>` : ''}</span>
+          <button class="btn-order" data-name="${escapeHtml(p.name)}" data-price="${p.price}" data-image="${escapeHtml(p.image)}" data-unit="${escapeHtml(p.unit || 'pièce')}">
             <i class="fas fa-shopping-bag"></i> Commander
           </button>
         </div>

@@ -1,12 +1,13 @@
 [
-   {
+  {
     "id": "Fosdka pistache",
     "name": "Fosdka pistache",
     "description": "une spécialité tunisienne raffinée a base de pistache .",
-    "price": 130,
+    "price": 13,
     "category": "produits",
     "badge": "Produit",
-    "image": "Images/image14.jpeg"
+    "image": "Images/image14.jpeg",
+    "unit": "100g"
   },
   {
     "id": "barquette-Datte-Mixte-moy",
@@ -30,19 +31,21 @@
     "id": "Kaak Warka",
     "name": "Kaak Warka(16 piéces)",
     "description": "Kaak Warka tunisien, une douceur traditionnelle au cœur fondant d'amandes.",
-    "price": 20,
+    "price": 4,
     "category": "coffret",
     "badge": "coffret",
-    "image": "Images/image3.png"
+    "image": "Images/image3.png",
+    "unit": "100g"
   },
   {
     "id": "la Bjaouia tunisienne à la pistache et aux amandes",
     "name": "la Bjaouia tunisienne à la pistache et aux amandes",
     "description": " Une pâtisserie tunisienne raffinée aux pistaches et aux amandes, riche en saveurs.",
-    "price": 20,
+    "price": 13,
     "category": "produits",
     "badge": "produits",
-    "image": "Images/image7.png"
+    "image": "Images/image7.png",
+    "unit": "100g"
   },
   {
     "id": "boule pignon amande",
@@ -51,43 +54,48 @@
     "price": 18.5,
     "category": "produits",
     "badge": "produits",
-    "image": "Images/image8.png"
+    "image": "Images/image8.png",
+    "unit": "100g"
   },
   {
     "id": "boule praline pistache",
     "name": "Boule praline pistache",
     "description": "Une douceur artisanale au praliné et à la pistache, riche en saveurs.",
-    "price": 18.5,
+    "price": 9,
     "category": "produits",
     "badge": "produits",
-    "image": "Images/image9.png"
+    "image": "Images/image9.png",
+    "unit": "100g"
   },
   {
     "id": "boule praline noisette",
     "name": "Boule praline noisette",
     "description": "Une bouchée gourmande au praliné et à la noisette, riche en saveurs.",
-    "price": 18.5,
+    "price": 9,
     "category": "produits",
     "badge": "produits",
-    "image": "Images/image10.png"
+    "image": "Images/image10.png",
+    "unit": "100g"
   },
   {
     "id": "boule de carthage",
     "name": "Boule de carthage",
     "description": "Une douceur tunisienne raffinée aux saveurs authentiques.",
-    "price": 9,
+    "price": 4.5,
     "category": "produits",
     "badge": "produits",
-    "image": "Images/image11.png"
+    "image": "Images/image11.png",
+    "unit": "100g"
   },
-    {
+  {
     "id": "Baklawa noisette",
     "name": "Baklawa noisette",
     "description": "une douceur tunisienne croustillante garnie de noisettes savoureuses pour un plaisir gourmand unique.",
-    "price": 40,
+    "price": 6,
     "category": "produits",
     "badge": "produits",
-    "image": "Images/image13.png"
+    "image": "Images/image13.png",
+    "unit": "100g"
   },
   {
     "id": "Boule Chocolat Noisette",
@@ -201,19 +209,21 @@
     "id": "brigadeiros",
     "name": "Brigadeiros",
     "description": "Truffe fondante façon brigadeiro brésilien, roulée à la main et entièrement enrobée de vermicelles chocolatés croquants.",
-    "price": 30,
+    "price": 4,
     "category": "produits",
     "badge": "Produit",
-    "image": "Images/produits/brigadeiros.jpg"
+    "image": "Images/produits/brigadeiros.jpg",
+    "unit": "100g"
   },
   {
     "id": "machmoum",
     "name": "Machmoum",
     "description": "Petit-four raffiné de la pâtisserie fine tunisienne, pâte d'amande et de pistache façonnée en bouquet et parsemée d'éclats de pistache.",
-    "price": 42,
+    "price": 10,
     "category": "produits",
     "badge": "Produit",
-    "image": "Images/produits/machmoum.jpg"
+    "image": "Images/produits/machmoum.jpg",
+    "unit": "100g"
   },
   {
     "id": "beijinho-coco",
@@ -228,18 +238,20 @@
     "id": "boulette-noix-amandes",
     "name": "Boulette aux Noix et Amandes (Twejen Jawza)",
     "description": "Boulette aux noix et amandes, une création raffinée de la pâtisserie fine tunisienne, souvent appelée Twejen Jawza ou Perle aux Noix.",
-    "price": 26,
+    "price": 4.5,
     "category": "produits",
     "badge": "Produit",
-    "image": "Images/produits/boulette-noix-amandes.jpg"
+    "image": "Images/produits/boulette-noix-amandes.jpg",
+    "unit": "100g"
   },
   {
     "id": "boulette-noix-amandes-grand-format",
     "name": "Boulette aux Noix et Amandes (Twejen Jawza)",
     "description": "Boulette aux noix et amandes, une création raffinée de la pâtisserie fine tunisienne, souvent appelée Twejen Jawza ou Perle aux Noix.",
-    "price": 50,
+    "price": 12,
     "category": "produits",
     "badge": "Produit",
-    "image": "Images/produits/image6.png"
+    "image": "Images/produits/image6.png",
+    "unit": "100g"
   }
 ]
