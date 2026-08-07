@@ -5,6 +5,11 @@
 let allProducts = [];
 let cartItems = [];
 
+// ===== FORMATAGE DES PRIX (format tunisien : 13 -> "13,000") =====
+function formatPrice(price) {
+  return Number(price).toFixed(3).replace('.', ',');
+}
+
 // ===== PERSISTANCE DU PANIER (partagée entre les pages) =====
 const CART_STORAGE_KEY = 'fyena_cart';
 
@@ -74,7 +79,7 @@ function renderProducts(products) {
         <h3 title="${p.name}"><a class="product-title-link" href="product.html?id=${encodeURIComponent(p.id)}">${p.name}</a></h3>
         <p title="${p.description}">${p.description}</p>
         <div class="product-footer">
-          <span class="product-price">${p.price} DT${p.unit ? ` <span class="price-unit">/ ${p.unit}</span>` : ''}</span>
+          <span class="product-price">${formatPrice(p.price)} DT${p.unit ? ` <span class="price-unit">/ ${p.unit}</span>` : ''}</span>
           <button class="btn-order" data-name="${p.name}" data-price="${p.price}" data-image="${p.image}" data-unit="${p.unit || 'pièce'}">
             <i class="fas fa-shopping-bag"></i> Commander
           </button>
@@ -183,7 +188,7 @@ function updateCartUI() {
 function renderCart() {
   if (cartItems.length === 0) {
     cartItemsContainer.innerHTML = `<p class="empty-msg">Votre panier est vide.<br>🍰 Ajoutez vos douceurs préférées !</p>`;
-    cartTotalPrice.textContent = '0 DT';
+    cartTotalPrice.textContent = '0,000 DT';
     updateWhatsAppLink(0);
     return;
   }
@@ -199,7 +204,7 @@ function renderCart() {
         <img class="cart-item-img" src="${item.image}" alt="${item.name}" />
         <div class="cart-item-info">
           <h4>${item.name}</h4>
-          <span>${item.price} DT / ${item.unit || 'pièce'}</span>
+          <span>${formatPrice(item.price)} DT / ${item.unit || 'pièce'}</span>
         </div>
         <div class="cart-item-actions">
           <div class="cart-item-qty">
@@ -207,14 +212,14 @@ function renderCart() {
             <span>${item.quantity}</span>
             <button onclick="updateQuantity('${item.name}', 1)">+</button>
           </div>
-          <span class="cart-item-price">${subtotal.toFixed(2)} DT</span>
+          <span class="cart-item-price">${formatPrice(subtotal)} DT</span>
         </div>
       </div>
     `;
   });
 
   cartItemsContainer.innerHTML = html;
-  cartTotalPrice.textContent = total.toFixed(2) + ' DT';
+  cartTotalPrice.textContent = formatPrice(total) + ' DT';
   updateWhatsAppLink(total);
 }
 
@@ -225,7 +230,7 @@ function updateWhatsAppLink(total) {
     message = 'Bonjour, je souhaite passer une commande chez Fyena. Pouvez-vous me renseigner ?';
   } else {
     const itemList = cartItems.map(i => `${i.name} (x${i.quantity})`).join(', ');
-    message = `Bonjour, je souhaite commander : ${itemList}. Total : ${total.toFixed(2)} DT.`;
+    message = `Bonjour, je souhaite commander : ${itemList}. Total : ${formatPrice(total)} DT.`;
   }
   const url = `https://wa.me/21621600684?text=${encodeURIComponent(message)}`;
   whatsappBtn.href = url;

@@ -181,7 +181,7 @@ function renderProductDetail(detailSection, product) {
           <p class="detail-desc">${escapeHtml(product.description)}</p>
 
           <div class="price-ticket">
-            <span class="amount">${product.price} DT</span>
+            <span class="amount">${formatPrice(product.price)} DT</span>
             <span class="unit">/ ${escapeHtml(unit)}</span>
           </div>
 
@@ -225,7 +225,7 @@ function renderProductDetail(detailSection, product) {
     </div>
 
     <div class="mobile-order-bar" id="mobileOrderBar">
-      <span class="mob-price">${product.price} DT <span class="price-unit">/ ${escapeHtml(unit)}</span></span>
+      <span class="mob-price">${formatPrice(product.price)} DT <span class="price-unit">/ ${escapeHtml(unit)}</span></span>
       <button type="button" id="mobileAddBtn"><i class="fas fa-shopping-bag"></i> Ajouter</button>
     </div>
   `;
@@ -306,7 +306,7 @@ function renderRelated(allProductsList, currentProduct) {
         <h3 title="${escapeHtml(p.name)}"><a class="product-title-link" href="product.html?id=${encodeURIComponent(p.id)}">${escapeHtml(p.name)}</a></h3>
         <p title="${escapeHtml(p.description)}">${escapeHtml(p.description)}</p>
         <div class="product-footer">
-          <span class="product-price">${p.price} DT${p.unit ? ` <span class="price-unit">/ ${escapeHtml(p.unit)}</span>` : ''}</span>
+          <span class="product-price">${formatPrice(p.price)} DT${p.unit ? ` <span class="price-unit">/ ${escapeHtml(p.unit)}</span>` : ''}</span>
           <button class="btn-order" data-name="${escapeHtml(p.name)}" data-price="${p.price}" data-image="${escapeHtml(p.image)}" data-unit="${escapeHtml(p.unit || 'pièce')}">
             <i class="fas fa-shopping-bag"></i> Commander
           </button>
